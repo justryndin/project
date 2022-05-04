@@ -20,3 +20,5 @@ print("Принадлежность", red.name)
 MyClass.name = "Здесь могла быть ваша реклама"
 print("Спрашивает Красный", red.name)
 print("Спрашивает Зеленый", green.name)
+
+print(5 != 6)
