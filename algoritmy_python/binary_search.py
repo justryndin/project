@@ -31,6 +31,6 @@ def binary_search(list, item):
 
 
 my_list = [1, 3, 5, 7, 9]
-my_list1 = [i for i in range(1, 1000000)]
+my_list1 = [i for i in range(1000000)]
 print(binary_search(my_list, 3))
-print(binary_search(my_list1, 45656))
+print(f"Индекс = {binary_search(my_list1, 45656)}")
