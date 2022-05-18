@@ -1,4 +1,8 @@
-def persistence(n):
-   pass
+import re
 
-persistence(39)
+
+text = 'ЫВПисиа И ии иыва и'
+match = re.findall(r'D', text)
+ind = text.index(match[0])
+
+print(ind)
