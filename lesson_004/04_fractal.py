@@ -11,9 +11,8 @@ sd.resolution = (1200, 800)
 point_0 = sd.get_point(600, 30)
 
 
-
-def draw_branches(point, angle, length=100):
-    if length < 1:
+def draw_branches_v1(point, angle, length=100):
+    if length < 2:
         return
 
     vector = sd.get_vector(start_point=point, angle=angle, length=length, width=1)
@@ -24,14 +23,15 @@ def draw_branches(point, angle, length=100):
     length *= 0.75
 
     next_angle = angle - delta * 0.7
-    draw_branches(next_point, next_angle, length)
+    draw_branches_v1(next_point, next_angle, length)
 
     next_angle = angle + delta * 0.7
-    draw_branches(next_point, next_angle, length)
+    draw_branches_v1(next_point, next_angle, length)
 
 
-# root_point = point_0
-# draw_branches(point=root_point, angle=90, length=100)
+root_point = point_0
+draw_branches_v1(point=root_point, angle=90, length=100)
+
 
 # 2) Сделать draw_branches рекурсивной
 # - добавить проверку на длину ветвей, если длина меньше 10 - не рисовать
@@ -57,7 +57,7 @@ def draw_branches(point, angle, length=100):
 
 # Пригодятся функции
 # sd.random_number()
-def draw_branches(point, angle, length=100):
+def draw_branches_v2(point, angle, length=100):
     if length < 10:
         return
 
@@ -66,7 +66,7 @@ def draw_branches(point, angle, length=100):
 
     next_point = vector.end_point
 
-    delta = 30
+    delta = 20
     delta_deviation = delta * 0.4
     delta += sd.random_number(-delta_deviation, delta_deviation)
 
@@ -75,13 +75,13 @@ def draw_branches(point, angle, length=100):
     length += sd.random_number(0, length_deviation)
 
     next_angle = round(angle + delta)
-    draw_branches(next_point, next_angle, int(length))
+    draw_branches_v2(next_point, next_angle, int(length))
 
     next_angle = round(angle - delta)
-    draw_branches(next_point, next_angle, int(length))
+    draw_branches_v2(next_point, next_angle, int(length))
 
 
-root_point = point_0
-draw_branches(point=root_point, angle=90, length=100)
+# root_point = point_0
+# draw_branches_v2(point=root_point, angle=90, length=100)
 
 sd.pause()
