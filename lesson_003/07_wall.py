@@ -11,8 +11,8 @@ sd.resolution = (800, 800)
 sd.background_color = sd.COLOR_DARK_ORANGE
 
 # размер кирпича
-x = 100
-y = 50
+x = 50
+y = 25
 
 half_brick = x // 2
 
