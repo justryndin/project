@@ -9,7 +9,7 @@ def draw_pic():
     rainbow.draw_rainbow()
     building.draw_house()
     building.draw_ground()
-    wood.draw_branches_v2(point=sd.get_point(950, 30),angle=90, length=80)
+    wood.draw_branches_v2(point=sd.get_point(950, 30), angle=90, length=80)
 
 
 if __name__ == '__main__':
