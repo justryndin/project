@@ -1,4 +1,3 @@
-
 # Игра «Быки и коровы»
 # https://goo.gl/Go2mb9
 #
@@ -44,10 +43,10 @@
 
 from mastermind_engine import make_number, check_number, generate_number
 from termcolor import cprint
+
 result = {'bulls': 0, 'cows': 0}
 count = 0
 is_bot = False
-
 
 while True:
 
