@@ -56,7 +56,7 @@ while True:
         cprint('*** "Быки и Коровы" ***', 'magenta')
         cprint('***********************', 'magenta')
 
-        is_bot = True if input('Доверите игру БОТУ? (y/n)') in ('Y', 'y', 'д', 'Д') else False
+        is_bot = True if input('Доверите игру БОТУ? (y/n)') in ('Y', 'y') else False
         cprint('Число загадано', 'green')
         cprint(make_number(), 'green')
 
