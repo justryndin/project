@@ -16,10 +16,9 @@
 # Примеры преобразований:
 #   print(Water(), '+', Air(), '=', Water() + Air())
 #   print(Fire(), '+', Air(), '=', Fire() + Air())
-from termcolor import cprint
 
 
-class Water():  # Вода
+class Water:  # Вода
 
     def __init__(self):
         self.name = "Вода"
@@ -46,7 +45,7 @@ class Water():  # Вода
         return element
 
 
-class Air():  # Воздух
+class Air:  # Воздух
 
     def __init__(self):
         self.name = 'Воздух'
@@ -67,7 +66,7 @@ class Air():  # Воздух
         return element
 
 
-class Fire():  # Огонь
+class Fire:  # Огонь
 
     def __init__(self):
         self.name = 'Огонь'
@@ -86,7 +85,7 @@ class Fire():  # Огонь
         return element
 
 
-class Earth():  # Земля
+class Earth:  # Земля
     def __init__(self):
         self.name = 'Земля'
 
@@ -94,7 +93,7 @@ class Earth():  # Земля
         return self.name
 
 
-class Storm():  # Шторм
+class Storm:  # Шторм
 
     def __init__(self):
         self.name = 'Шторм'
@@ -103,7 +102,7 @@ class Storm():  # Шторм
         return self.name
 
 
-class Steam():  # Пар
+class Steam:  # Пар
     def __init__(self):
         self.name = 'Пар'
 
@@ -111,7 +110,7 @@ class Steam():  # Пар
         return self.name
 
 
-class Dirt():  # Грязь
+class Dirt:  # Грязь
     def __init__(self):
         self.name = 'Грязь'
 
@@ -119,7 +118,7 @@ class Dirt():  # Грязь
         return self.name
 
 
-class Lightning():  # Молния
+class Lightning:  # Молния
     def __init__(self):
         self.name = 'Молния'
 
@@ -127,7 +126,7 @@ class Lightning():  # Молния
         return self.name
 
 
-class Dust():  # Пыль
+class Dust:  # Пыль
     def __init__(self):
         self.name = 'Пыль'
 
@@ -135,7 +134,7 @@ class Dust():  # Пыль
         return self.name
 
 
-class Lava():  # Лава
+class Lava:  # Лава
     def __init__(self):
         self.name = 'Лава'
 
