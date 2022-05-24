@@ -6,7 +6,7 @@ rainbow_colors = [sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN
                   sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE]
 
 
-def draw_rainbow(x=350, y=10, radius=800, width=8):
+def draw_rainbow(x=350, y=10, radius=800, width=10):
     step = 0
 
     for color in rainbow_colors:
